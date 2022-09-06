@@ -8,19 +8,20 @@ html, body{
     height: 100%;
     width: 100%;
     font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .w50{
     width: 48%;
-    height: 30rem;
+    height: 31rem;
 }
 .w40{
     width: 33%;
-    height: 23rem;
+    height: 22.5rem;
 }
 .w30{
     width: 30%;
-    height: 23rem;
+    height: 22.5rem;
 }
 
 .color1{
@@ -41,10 +42,6 @@ html, body{
 .color6{
     background-color: #d7cdc2;
 }
-
-
-
-
 
 .header_container{
     height: 100%;
@@ -94,8 +91,10 @@ html, body{
 header > nav > ul{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    transition: .5s ease-in-out;
 }
+
 
 header > nav > ul > li{
     list-style-type: none;
@@ -106,7 +105,18 @@ header > nav > ul > li{
 header > nav > ul > li > a{
     text-decoration: none;
     color: #737682;
+}
 
+#mobile{
+    font-size: 2.4rem;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.MobileAtc {
+    transition: .5s ease;
+    width: 25rem;
 }
 
 .conteudo{
@@ -122,12 +132,14 @@ header > nav > ul > li > a{
     /* align-items: center; */
     /* background-color: red; */
     padding-left: 5%;
-    width: 50%;
+    /* width: 50%; */
+    z-index: 1;
 }
 
 .content_esquerdo > h3{
     font-size: 2rem;
     color: #2d2c35;  
+    
 }
 
 .content_esquerdo > h2:nth-last-of-type(2){
@@ -141,14 +153,14 @@ header > nav > ul > li > a{
 .content_esquerdo > p{
     font-size:1.5rem;
     padding: 1.5rem 0;
-    color: #afb3bd;
+    color: #a4abbd;
 }
 .content_esquerdo > button{
     display: flex;
     justify-content:center;
     align-items: center;
-    background-color: #ceb8a2;
-    color: #797a7e;
+    background-color: #efc396;
+    color: #86888f;
     font-size:1.2rem;
     width: 14rem;
     padding: 1rem 1.5rem;
@@ -157,24 +169,22 @@ header > nav > ul > li > a{
 }
 
 
-.content_direito{
+/* .content_direito{
     display: flex;
     justify-content: center;
-    /* background: blue; */
+    background: blue;
     position: relative;
     width: 50%;
     height: 100%;
-}
+} */
 
-.content_direito > img{
+.conteudo img{
     position: absolute;
-    /* height: 56rem;
-    width: 40rem; */
     height: 82%;
-    width: 55%;
+    width: 29%;
     min-width: 35rem;
     bottom: 0%;
-    left: 2%;
+    right: 17%;
 }
 
 .produtos_container{
@@ -203,7 +213,7 @@ header > nav > ul > li > a{
     max-width: 17rem;
     margin: 0 0.5rem;
     border-radius: .4rem;
-    box-shadow: 0px 3px 13px -6px #00000059;
+    box-shadow: 0px 4px 4px 0px #e3e6f2;
 }
 
 .Prod_Link_Uteis img{
@@ -216,8 +226,9 @@ header > nav > ul > li > a{
 
 .Prod_Link_Uteis p{
     padding: 0.4rem 2rem;
+    text-align: center;
     font-size: 1.3rem;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 
 .prod_conteudo{
@@ -244,22 +255,38 @@ header > nav > ul > li > a{
 .MostrarProduto_1{
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     flex-wrap: wrap;
 }
+
 
 .MostrarProduto_1 .ProdUnico{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: calc(100% / 4);
+    width: calc(100%);
     max-width: 25rem;
-    height: 35rem;
+    height: 96%;
     border: 1px solid rgba(128, 128, 128, 0.267);
     padding: 1rem 0.7rem;
     margin: 1.2rem 1%;
     border-radius: 2rem;
+    transition: .3s;
+}
+
+.MostrarProduto_1 .ProdUnico:hover{
+    box-shadow: 0px 3px 10px 1px #d0d4e0;
+}
+
+.wrap{
+    width: calc(100% / 4);
+    height: 38rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    /* background-color: #adadad87; */
 }
 
 .imgProdU{
@@ -285,12 +312,12 @@ header > nav > ul > li > a{
 }
 
 .Info_ProdUnico p{
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     color: #949090;
 }
 
 .Info_ProdUnico h4{
-    font-size: 1.8rem;
+    font-size: 1.65rem;
 }
 
 .InfoEstrelas{
@@ -328,7 +355,8 @@ header > nav > ul > li > a{
 }
 
 .Preco_Carrinho button i{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    color: #444343;
 }
 
 .ShowPromo{
@@ -398,7 +426,7 @@ header > nav > ul > li > a{
 .NotNovidades{
     width: 100%;
     margin: 5rem 0;
-    padding: 6rem 5%;
+    padding: 7rem 5%;
     background-color: #031e41;
     display: flex;
 }
@@ -413,7 +441,7 @@ header > nav > ul > li > a{
 }
 
 .NotNovidades .esquerda p{
-    font-size: 1.65rem;
+    font-size: 1.6rem;
     color: #5a708c;
 }
 
@@ -426,11 +454,10 @@ header > nav > ul > li > a{
     display: flex;
     align-items: center;
     justify-content:center;
-    font-size: 1.4rem;
 }
 
 .NotNovidades .direita input{
-    height: 4rem;
+    height: 4.5rem;
     color: #5a708c;
  }
 
@@ -453,6 +480,15 @@ header > nav > ul > li > a{
     padding: 1rem 5%;
 }
 
+.contatcFollowsImg a{
+    text-decoration: none;
+    color: black;
+}
+
+.contatcFollowsImg a:hover i{
+     transform: scale(1.2, 1.2)
+}
+
 .f_contato{
     width: 30%;
     display: flex;
@@ -467,26 +503,25 @@ header > nav > ul > li > a{
 }
 
 .f_contato h2{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 .f_contato p{
     font-size: 1.5rem;
-    padding: .2rem 0;
+    padding: .3rem 0;
 }
 
 .f_contato i{
     padding: 0 .5rem;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
-
 
 .f_about{
     width: 30% 
 }
  
 .f_about h2{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
 }
 
@@ -500,7 +535,7 @@ header > nav > ul > li > a{
 }
 
 .f_install h2{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     padding: 1rem 0;
 }
 
@@ -548,4 +583,145 @@ header > nav > ul > li > a{
 .googlestyle i{
     padding-right: .8rem;
     font-size: 2.7rem;
+}
+
+.cartoes{
+    font-size: 3.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.cartoes img{
+    width: 5.5rem;
+    height: 100%;
+    margin: 0 .3rem;
+}
+
+
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 768px){
+    header > nav > ul {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: start;
+        height: 100vh;
+        padding-top: 8rem;
+        top: 0;
+        right: 0;
+        width: 0rem;
+        background-color: #e3e6f2;red;
+        position: absolute;
+        font-size: 1.9rem;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+    .link_Atc::before {
+        width: 12%;
+    }
+
+    .conteudo img {
+        right: 6%;
+    }
+
+    .produtos_container > header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        padding: 1rem 6%;
+        margin-bottom: 6rem;
+    }
+
+    .Prod_Link_Uteis {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #dbd9d9;
+        height: 16rem;
+        width: calc(100% / 3);
+        min-width: 10rem;
+        flex-wrap: wrap;
+        max-width: 17rem;
+        margin: 1rem 0.5rem;
+        border-radius: 0.4rem;
+        box-shadow: 0px 4px 4px 0px #e3e6f2;
+    }
+
+    .wrap {
+        width: calc(100% / 3);
+        height: 38rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 0.3rem 1rem;
+    }
+
+    .w50 {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .hot_unic {
+        margin: .5rem 1%;
+    }
+
+    .NotNovidades {
+        width: 100%;
+        margin: 5rem 0;
+        padding: 5rem 5%;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        background-color: #031e41;
+        display: flex;
+    }
+    
+    .NotNovidades .esquerda {
+        width: 100%;
+    }    
+    .NotNovidades .direita {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        margin-top: 2rem;
+    }
+
+    .f_uteis {
+        flex-wrap: wrap;
+    }
+    .f_contato {
+        width: 55%;
+    }
+    .f_install {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .prod_conteudo {
+        padding: 0rem 2% 0 2%;
+    }
+    .wrap {
+        width: calc(100% / 2);
+        padding: 0.3rem 0.5rem;
+    }
+    .Prod_Link_Uteis {
+        margin: 1rem 1.5rem;
+    }
+    .produtos_container > header {
+        justify-content: center;
+        padding: 1rem 2%;
+    }
 }
