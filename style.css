@@ -62,6 +62,20 @@ html, body{
     box-shadow: 0px 1px 16px 0px #bba0a04b;
 }
 
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    background-color: #e3e6f2;
+    width: 100%;
+    height: 7rem;
+    padding: 0rem 5%;
+    z-index: 999;
+    box-shadow: 0px 1px 16px 0px #bba0a04b;
+}
+
+
 .header_container header > img{
     width: 6rem;
     height: 6rem;
@@ -841,4 +855,637 @@ header > nav > ul > li > a{
 
 .info_detalhes p{
     font-size: 1.5rem;
+}
+
+
+/* ESTILO PARA O BLOG */
+
+.topo{
+    background-image: url(imgs/topo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 78%;
+    width: 100%;
+    height: 33rem;
+    margin: 0rem 0 14rem 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.topo h2{
+    font-size: 3.5rem;
+}
+
+.topo p{
+    font-size: 1.5rem;
+}
+
+.content{
+    padding: 0 6%;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    margin: 9rem 0 6rem 0;
+    position: relative;
+}
+
+.img_data{
+    height: 100%;
+    width: 45%;
+    max-width: 49rem;
+    background:red;
+}
+
+.infos_content{
+    padding-left:3%;
+    width: 55%;
+}
+
+.limit_text{
+    width: 70%;
+}
+
+.img_data h2{
+    font-weight: bold;
+    font-size: 5.4rem;
+    position: absolute;
+    top: -4.4rem;
+    left: 0;
+    color: #939499;
+    padding-left: 6%;
+    z-index: -1;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.img_data img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infos_content h2{
+    font-size: 1.9rem;
+}
+
+.infos_content p{
+    font-size: 1.5rem;
+}
+
+
+.limit_text > p{
+    margin: 1.1rem 0;
+    color: #939499;
+}
+
+.line_cont{
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+}
+
+.line{
+    display: block;
+    width: 5rem;
+    height: .1rem;
+    margin-left: 1rem;
+    background-color: black;
+}
+
+.paginacao{
+    margin-top: 8rem;
+    width: 100%;
+    height: 5rem;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+}
+
+.paginacao span{
+    border-radius: .4rem;
+    width: 4.5rem;
+    height: 4rem;
+   margin: 0 .4rem; 
+   background-color: gray;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+/* ESTILO PÁGINA SOBRE */
+
+.topoSobre{
+    /* background-image: url(imgs/topo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-position-y: 78%; */
+    width: 100%;
+    height: 33rem;
+    /* margin: 0rem 0 14rem 0; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+}
+
+
+/* ESTILO PARA A PÁGINA DE SOBRE */
+
+.contentImgSobre{
+    display: flex;
+    width: 100%;
+    height: 50rem;
+    align-items: center;
+}
+
+.sobre_img{
+    width: 45%;
+    height: 100%;
+}
+
+.sobre_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.sobre_text{
+    width: 55%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-right: 10%;
+    height: 100%;
+}
+
+.sobre_text h2{
+    font-size: 3.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.sobre_text p{
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.contentDownApp{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60rem;
+    margin-bottom: 6rem;
+}
+
+.contentDownApp h2{
+   font-size: 4.8rem;
+   margin-bottom: 2rem;
+}
+
+.downApp{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: gray;
+    width: 40rem;
+    height: 100%;
+}
+
+/* ESTILO PARA CARRINHO */
+
+.contentCarrinho{
+    width: 100%;
+    padding: 2rem 5%;
+    margin: 2rem 0;
+    /* background-color: rgb(87, 77, 77); */
+    font-size: 1.8rem;
+
+}
+
+.CarTitles{
+    display: flex;
+    justify-content:center;
+    margin-bottom: .5rem;
+    border-top: 1px solid #c3c6cf;
+    border-bottom: 1px solid #c3c6cf;
+}
+
+.CarTitles span{
+    width: calc(100% / 7);
+    padding: 1.5rem 0;
+    text-align: center;
+    /* background-color: rgb(221, 74, 74); */
+}
+
+.CarTitles span:nth-of-type(1){
+    max-width: 12rem;
+}
+
+.CarTitles span:nth-of-type(2){
+    max-width: 10rem;
+}
+.CarTitles span:nth-of-type(3){
+    min-width: 15rem;
+}
+.CarTitles span:nth-of-type(4){
+    min-width: 19rem;
+}
+.CarTitles span:nth-of-type(5){
+    min-width: 13rem;
+}
+.CarTitles span:nth-of-type(6){
+    min-width: 15rem;
+}
+
+.carInfos{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content:center;
+}
+
+.carInfos span{
+    width: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: .5rem 0;
+    text-align: center;
+    /* background-color: rgb(221, 74, 74); */
+}
+
+.carInfos span:nth-of-type(1){
+    max-width: 12rem;
+}
+.carInfos span input:nth-of-type(1) {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+.carInfos span:nth-of-type(2){
+    max-width: 10rem;
+}
+.carInfos span i{
+   font-size: 2rem;
+}
+
+.carInfos span:nth-of-type(3){
+    min-width: 15rem;
+}
+.carInfos span:nth-of-type(4){
+    min-width: 19rem;
+    font-size: 1.6rem;
+}
+
+.carInfos span:nth-of-type(5){
+    min-width: 13rem;
+    font-size: 1.6rem;
+}
+.carInfos span:nth-of-type(6){
+    min-width: 15rem;
+}
+.carInfos span:nth-of-type(6) input {
+    width: 6.5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    height: 3.5rem;
+}
+
+.carInfos span:nth-of-type(7){
+    font-size: 1.6rem;
+}
+
+
+.carInfos span img{
+    width: 100%;
+    max-width: 11.5rem;
+    height: 100%;
+    object-fit: fill;
+}
+
+.FinalBuy{
+    display: flex;
+    width: 100%;
+    padding: 0 5%;
+    margin: 8rem 0 3rem 0;
+}
+
+.cupom{
+    width: 50%;
+}
+
+.cupom input[type="text"]{ 
+    width: 60%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    outline: none;
+}
+
+.cupom input[type="submit"]{ 
+    /* width: 40%; */
+    height: 3.5rem;
+    padding: 0 1.6rem;
+}
+
+
+.finalValores{
+    width: 50%;
+    padding: 3rem 1rem;
+    border: 1px solid gray;
+}
+
+.finalValores h2{
+   font-size: 2rem;
+   margin-bottom: 2rem;
+}
+
+.finalValores table{
+    border-collapse: collapse; 
+ }
+.finalValores td{
+    font-size: 1.6rem;
+    padding: .5rem;
+    border: 1px solid rgb(158, 153, 153);
+   
+ }
+
+ /* ESTILO PARA O MAPS */
+
+ .maps{
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: 0 5%;
+    margin-top: -4rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+ }
+
+ .MapsInfo{
+    width: 40%;
+ }
+
+ .MapsInfo > h2{
+    font-size: 2.4rem;
+ }
+ .MapsInfo > p{
+    font-size: 1.7rem;
+    margin: 1.4rem 0;
+    font-weight: bold;
+ }
+
+ .wraper-map{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.wrape-map3{
+    position: relative;
+    max-height: 35rem;
+    width: 100%;
+    max-width: 60rem;
+}
+
+.wraper-map2{
+	    /* left: 0; */
+    /* top: 0; */
+    width: 100%;
+    /* height: 100%; */
+    padding-top: 100%;
+    /* position: relative; */
+}
+
+.mapa{
+    /* margin-top: 10px; */
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid rgb(200, 200, 200);
+}
+
+ /* ESTILO PARA FORMULÁRIO DE CONTATO */
+
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ffe6e9; */
+    width: 100%;
+    height: 100vh;
+}
+
+.content{
+    background-color: azure;
+    width: 78rem;
+    height: 45rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px 2px rgb(0 0 0 / 20%);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.changeView{
+    display: none;
+    align-items: center;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 6%;
+    top: 1.4rem;
+    z-index: 99;
+    height: 4rem;
+}
+
+.changeView i{
+    cursor: pointer;
+}
+
+.changeView > i:nth-of-type(1){
+    display: none;
+}
+
+.cont_esquerda{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    width: 45%;
+    height: 100%;
+}
+
+.AbaLateral{
+    width: 31rem;
+    height: 85%;
+    padding: 1% 2% 1% 4rem;
+    display: flex;
+    background-color: #ed3348;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: -50%;
+    border-radius: 0.5rem;
+}
+
+.AbaLateral h2{
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.contac_single{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.contac_single a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.contac_single i{
+    font-size: 2rem;
+    padding-right: 1.6rem;
+}
+
+.cont_direita{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    padding: 4% 3%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cont_direita h2{
+    font-size:2.5rem;
+    color: #103e6d;
+}
+
+.cont_direita p{
+    color: #9aa0a3;
+    font-size:1.5rem;
+    margin: .5rem 0 2rem 0;
+}
+
+.cont_direita form{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont_direita form input, form textarea{
+   width: 80%;
+   height: 5.5rem;
+   font-size: 1.4rem;
+   border-radius: 1rem;
+   border: 0;
+   margin: 1.2rem 0;
+   padding: 1rem 1rem;
+   outline: none;
+   background-color: #ffe6e9;
+   color: #616168;
+   resize: none;
+}
+
+.cont_direita form textarea{
+    height: 10rem;
+ }
+
+.cont_direita form input[type="submit"]{
+    width: 10rem;
+    height: 4.2rem;
+    border-radius: 1.5rem;
+    border: 0;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    background-color: #ed3348;
+    color: white;
+    font-size: 1.6rem;
+ }
+
+ @media screen and (max-width:  900px){
+    .cont_esquerda {
+        width: 40%;
+    }
+    .AbaLateral {
+        width: 32rem;
+        padding: 1% 2% 1% 4rem;
+        left: -5rem;
+    }
+    .cont_direita {
+        width: 60%;
+        padding: 4% 1%;
+    }
+    .cont_direita form input, form textarea {
+        width: 90%;
+    }
+ }
+
+@media screen and (max-width: 768px){
+    .content {   
+        width: 95%;
+        justify-content: center;
+    }
+    .changeView{
+        display: flex;
+    }
+    .esquerdaAtiva{
+        width: 100% !important;
+        height: 100%;
+        padding: 1% 2% 1% 6rem;
+        display: flex;
+        background-color: #ed3348;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        /* left: -10rem; */
+        border-radius: 0.5rem;
+    }
+    .cont_esquerda {
+        width: 0%;
+    }   
+
+    .AbaLateral.AbaAtiva{
+        width: 100%;
+        height: 100%;
+        padding: 1% 2% 1% 6rem;
+        display: flex;
+        background-color: #ed3348;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        /* left: -10rem; */
+        border-radius: .5rem;
+    }
+
+    .AbaLateral {
+        width: 0rem;
+        padding: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .cont_direita.offdireita{
+        width: 0%;
+        padding: 0;
+        overflow: hidden;
+    }
+    .cont_direita {
+        width: 100%;
+        padding: 4% 6%;
+    }
 }
